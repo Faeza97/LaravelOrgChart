@@ -16,6 +16,8 @@ class CreateNodesTable extends Migration
         Schema::create('nodes', function (Blueprint $table) {
             $table->id();
             $table->integer('pid')->nullable();
+            $table->string('name')->nullable();
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

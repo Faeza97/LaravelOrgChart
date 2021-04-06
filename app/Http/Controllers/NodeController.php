@@ -21,6 +21,8 @@ class NodeController extends Controller
 
         $request->validate([
             'id' => 'required',
+            'name' => 'required',
+            'title' => 'required',
 
         ]);
     
@@ -37,6 +39,5 @@ class NodeController extends Controller
         return json_encode(array('statusCode'=>200));
        
     }
-
 
 }

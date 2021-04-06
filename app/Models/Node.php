@@ -10,7 +10,7 @@ class Node extends Model
     use HasFactory;
     
     protected $fillable = [
-        'id', 'pid'
+        'id', 'pid' , 'name' , 'title'
     ];
 
 }

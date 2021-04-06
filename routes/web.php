@@ -20,5 +20,5 @@ Route::resource('nodes', NodeController::class);
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::resource('nodes', NodeController::class);
 Route::delete('/nodes/{id}', [NodeController::class, 'deleteNode']);
